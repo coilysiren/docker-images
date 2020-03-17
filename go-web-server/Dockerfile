@@ -1,6 +1,6 @@
 FROM circleci/golang:1.13
 
-# explicitly set the user to root0
+# explicitly set the user to root
 USER root
 
 # install apt deps
