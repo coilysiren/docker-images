@@ -29,4 +29,5 @@ RUN \
 
 # install pulumi
 RUN curl -fsSL https://get.pulumi.com | sh
-RUN pulumi --version
+ENV PATH="~/.pulumi/bin:$PATH"
+RUN pulumi version
