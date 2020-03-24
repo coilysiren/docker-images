@@ -26,3 +26,7 @@ RUN \
   unzip terraform_"$TERRAFORM_VERSION"_linux_amd64.zip && \
   sudo mv terraform /usr/local/bin/ && \
   terraform --version
+
+# install pulumi
+RUN curl -fsSL https://get.pulumi.com | sh
+RUN pulumi --version
